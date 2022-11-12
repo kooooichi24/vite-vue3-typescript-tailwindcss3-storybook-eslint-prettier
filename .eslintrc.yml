@@ -5,6 +5,7 @@ extends:
   - airbnb-base
   - plugin:vue/vue3-recommended
   - plugin:@typescript-eslint/recommended
+  - prettier
 overrides: []
 parser: '@typescript-eslint/parser'
 parserOptions:
