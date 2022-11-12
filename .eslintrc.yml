@@ -14,4 +14,19 @@ parserOptions:
 plugins:
   - vue
   - "@typescript-eslint"
-rules: {}
+rules:
+  {
+    "import/no-extraneous-dependencies":
+      [
+        "error",
+        {
+          "devDependencies":
+            [
+              "**/*.stories.*",
+              "**/.storybook/**/*.*",
+              "vite-env.d.ts",
+              "vite.config.ts",
+            ],
+        },
+      ],
+  }
