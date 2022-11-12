@@ -2,7 +2,7 @@ env:
   browser: true
   es2021: true
 extends:
-  - eslint:recommended
+  - airbnb-base
   - plugin:vue/vue3-recommended
   - plugin:@typescript-eslint/recommended
 overrides: []
