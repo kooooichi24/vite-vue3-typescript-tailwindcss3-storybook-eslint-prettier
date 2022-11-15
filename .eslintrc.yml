@@ -5,6 +5,7 @@ extends:
   - airbnb-base
   - plugin:vue/vue3-recommended
   - plugin:@typescript-eslint/recommended
+  - plugin:import/recommended
   - prettier
 overrides: []
 parser: "vue-eslint-parser"
@@ -15,8 +16,11 @@ parserOptions:
 plugins:
   - vue
   - "@typescript-eslint"
+settings:
+  import/resolver: { typescript: { project: "./" } }
 rules:
   {
     "import/no-extraneous-dependencies": off,
+    "import/extensions": off,
     "vue/multi-word-component-names": off,
   }
