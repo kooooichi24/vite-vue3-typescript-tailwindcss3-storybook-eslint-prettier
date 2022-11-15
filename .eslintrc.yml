@@ -15,4 +15,8 @@ parserOptions:
 plugins:
   - vue
   - "@typescript-eslint"
-rules: { "import/no-extraneous-dependencies": off }
+rules:
+  {
+    "import/no-extraneous-dependencies": off,
+    "vue/multi-word-component-names": off,
+  }
