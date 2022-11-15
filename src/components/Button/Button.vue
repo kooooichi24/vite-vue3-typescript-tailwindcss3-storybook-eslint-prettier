@@ -38,7 +38,6 @@ const buttonClass = computed(() => [
 const onClick = () => {
   emits("click");
 };
-
 </script>
 
 <template>
