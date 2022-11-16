@@ -1,8 +1,20 @@
 const buttonConfig = {
   size: {
-    small: "text-sm px-3 py-1.5",
-    medium: "text-base px-4 py-2",
-    large: "text-lg px-6 py-2.5",
+    small: {
+      base: "text-sm px-3 py-1.5",
+      withLeft: "text-sm pl-2 pr-3 py-1.5",
+      withRight: "text-sm pl-3 pr-2 py-1.5",
+    },
+    medium: {
+      base: "text-base px-4 py-2",
+      withLeft: "text-base pl-3 pr-4 py-2",
+      withRight: "text-base pl-4 pr-3 py-2",
+    },
+    large: {
+      base: "text-lg px-6 py-2.5",
+      withLeft: "text-lg pl-4 pr-6 py-2.5",
+      withRight: "text-lg pl-6 pr-4 py-2.5",
+    },
   },
   primary: {
     contained: {

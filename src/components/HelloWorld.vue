@@ -14,7 +14,7 @@ const handleClick = () => {
 <template>
   <h1>{{ msg }}</h1>
   <h2>Count: {{ count }}</h2>
-  <Button label="Button" @click="handleClick" />
+  <Button @click="handleClick">click me</Button>
 </template>
 
 <style scoped>
