@@ -204,6 +204,8 @@ const AllTemplate = (args) => ({
         </Button>
       </div>
     </div>
+
+    <br>
     <br>
 
     <div class="flex flex-row space-x-4">
