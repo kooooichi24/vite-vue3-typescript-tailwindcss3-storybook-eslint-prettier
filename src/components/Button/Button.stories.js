@@ -31,7 +31,6 @@ const AllTemplate = (args) => ({
     return { args };
   },
   template: `
-    <h2>Primary</h2>
     <div class="flex flex-row space-x-4">
       <div>
         <h3>Contained</h3>
@@ -118,11 +117,7 @@ const AllTemplate = (args) => ({
           Button
         </Button>
       </div>
-    </div>
-    <br>
 
-    <h2>Attention</h2>
-    <div class="flex flex-row space-x-4">
       <div>
         <h3>Text</h3>
         <Button v-bind="args.attention.contained.enabled.large">
@@ -207,6 +202,409 @@ const AllTemplate = (args) => ({
         <Button v-bind="args.attention.text.disabled.small">
           Button
         </Button>
+      </div>
+    </div>
+    <br>
+
+    <div class="flex flex-row space-x-4">
+      <div>
+        <Button size="large" shape="round">
+          Button
+        </Button>
+        <br>
+        <Button shape="round">
+          Button
+        </Button>
+        <br>
+        <Button size="small" shape="round">
+          Button
+        </Button>
+      </div>
+
+      <div>
+        <Button size="large" variant="outlined" shape="round">
+          Button
+        </Button>
+        <br>
+        <Button variant="outlined" shape="round">
+          Button
+        </Button>
+        <br>
+        <Button size="small" variant="outlined" shape="round">
+          Button
+        </Button>
+      </div>
+
+      <div>
+        <Button size="large" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+
+        <Button size="medium" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+
+        <Button size="small" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+      </div>
+
+      <div>
+        <Button size="large" variant="outlined" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+
+        <Button size="medium" variant="outlined" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+
+        <Button size="small" variant="outlined" shape="round">
+          <template #left>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+          コールを作成
+        </Button>
+        <br>
+      </div>
+
+      <div>
+        <Button size="large" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+
+        <Button size="medium" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+
+        <Button size="small" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+      </div>
+
+      <div>
+        <Button size="large" variant="outlined" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+
+        <Button size="medium" variant="outlined" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+
+        <Button size="small" variant="outlined" shape="round">
+          コールを作成
+          <template #right>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+          </template>
+        </Button>
+        <br>
+      </div>
+
+      <div>
+        <Button size="large" shape="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
+
+        <Button size="medium" shape="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
+
+        <Button size="small" shape="circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
+      </div>
+
+      <div>
+        <Button size="large" shape="circle" variant="text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
+
+        <Button size="medium" shape="circle" variant="text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
+
+        <Button size="small" shape="circle" variant="text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          </svg>
+        </Button>
+        <br>
       </div>
     </div>
   `,
