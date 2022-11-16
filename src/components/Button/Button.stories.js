@@ -31,28 +31,28 @@ const AllTemplate = (args) => ({
     <div class="flex flex-row space-x-4">
       <div>
         <h3>Contained</h3>
-        <Button v-bind="args.primary.contained.enable.large">
+        <Button v-bind="args.primary.contained.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.contained.enable.default">
+        <Button v-bind="args.primary.contained.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.contained.enable.small">
+        <Button v-bind="args.primary.contained.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.primary.contained.disable.large">
+        <Button v-bind="args.primary.contained.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.contained.disable.default">
+        <Button v-bind="args.primary.contained.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.contained.disable.small">
+        <Button v-bind="args.primary.contained.disabled.small">
           Button
         </Button>
       </div>
@@ -60,28 +60,28 @@ const AllTemplate = (args) => ({
 
       <div>
         <h3>Outlined</h3>
-        <Button v-bind="args.primary.outlined.enable.large">
+        <Button v-bind="args.primary.outlined.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.outlined.enable.default">
+        <Button v-bind="args.primary.outlined.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.outlined.enable.small">
+        <Button v-bind="args.primary.outlined.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.primary.outlined.disable.large">
+        <Button v-bind="args.primary.outlined.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.outlined.disable.default">
+        <Button v-bind="args.primary.outlined.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.outlined.disable.small">
+        <Button v-bind="args.primary.outlined.disabled.small">
           Button
         </Button>
       </div>
@@ -89,28 +89,28 @@ const AllTemplate = (args) => ({
 
       <div>
         <h3>Text</h3>
-        <Button v-bind="args.primary.text.enable.large">
+        <Button v-bind="args.primary.text.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.text.enable.default">
+        <Button v-bind="args.primary.text.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.text.enable.small">
+        <Button v-bind="args.primary.text.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.primary.text.disable.large">
+        <Button v-bind="args.primary.text.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.primary.text.disable.default">
+        <Button v-bind="args.primary.text.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.primary.text.disable.small">
+        <Button v-bind="args.primary.text.disabled.small">
           Button
         </Button>
       </div>
@@ -121,28 +121,28 @@ const AllTemplate = (args) => ({
     <div class="flex flex-row space-x-4">
       <div>
         <h3>Text</h3>
-        <Button v-bind="args.attention.contained.enable.large">
+        <Button v-bind="args.attention.contained.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.contained.enable.default">
+        <Button v-bind="args.attention.contained.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.contained.enable.small">
+        <Button v-bind="args.attention.contained.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.attention.contained.disable.large">
+        <Button v-bind="args.attention.contained.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.contained.disable.default">
+        <Button v-bind="args.attention.contained.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.contained.disable.small">
+        <Button v-bind="args.attention.contained.disabled.small">
           Button
         </Button>
       </div>
@@ -150,28 +150,28 @@ const AllTemplate = (args) => ({
 
       <div>
         <h3>Outlined</h3>
-        <Button v-bind="args.attention.outlined.enable.large">
+        <Button v-bind="args.attention.outlined.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.outlined.enable.default">
+        <Button v-bind="args.attention.outlined.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.outlined.enable.small">
+        <Button v-bind="args.attention.outlined.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.attention.outlined.disable.large">
+        <Button v-bind="args.attention.outlined.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.outlined.disable.default">
+        <Button v-bind="args.attention.outlined.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.outlined.disable.small">
+        <Button v-bind="args.attention.outlined.disabled.small">
           Button
         </Button>
       </div>
@@ -179,28 +179,28 @@ const AllTemplate = (args) => ({
 
       <div>
         <h3>Text</h3>
-        <Button v-bind="args.attention.text.enable.large">
+        <Button v-bind="args.attention.text.enabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.text.enable.default">
+        <Button v-bind="args.attention.text.enabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.text.enable.small">
+        <Button v-bind="args.attention.text.enabled.small">
           Button
         </Button>
         <br>
 
-        <Button v-bind="args.attention.text.disable.large">
+        <Button v-bind="args.attention.text.disabled.large">
           Button
         </Button>    
         <br>
-        <Button v-bind="args.attention.text.disable.default">
+        <Button v-bind="args.attention.text.disabled.default">
           Button
         </Button>
         <br>
-        <Button v-bind="args.attention.text.disable.small">
+        <Button v-bind="args.attention.text.disabled.small">
           Button
         </Button>
       </div>
@@ -211,7 +211,7 @@ export const All = AllTemplate.bind({});
 All.args = {
   primary: {
     contained: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
         },
@@ -222,7 +222,7 @@ All.args = {
           size: "small",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           disabled: true,
@@ -238,7 +238,7 @@ All.args = {
       },
     },
     outlined: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
           variant: "outlined",
@@ -252,7 +252,7 @@ All.args = {
           variant: "outlined",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           variant: "outlined",
@@ -271,7 +271,7 @@ All.args = {
       },
     },
     text: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
           variant: "text",
@@ -285,7 +285,7 @@ All.args = {
           variant: "text",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           variant: "text",
@@ -306,7 +306,7 @@ All.args = {
   },
   attention: {
     contained: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
           color: "attention",
@@ -319,7 +319,7 @@ All.args = {
           color: "attention",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           color: "attention",
@@ -337,7 +337,7 @@ All.args = {
       },
     },
     outlined: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
           variant: "outlined",
@@ -353,7 +353,7 @@ All.args = {
           color: "attention",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           variant: "outlined",
@@ -374,7 +374,7 @@ All.args = {
       },
     },
     text: {
-      enable: {
+      enabled: {
         large: {
           size: "large",
           color: "attention",
@@ -390,7 +390,7 @@ All.args = {
           variant: "text",
         },
       },
-      disable: {
+      disabled: {
         large: {
           size: "large",
           color: "attention",
