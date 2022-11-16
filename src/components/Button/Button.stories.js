@@ -28,168 +28,183 @@ const AllTemplate = (args) => ({
   },
   template: `
     <h2>Primary</h2>
-    <h3>Primary Contained</h3>
-    <Button v-bind="args.primary.contained.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.contained.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.contained.enable.small">
-      Button
-    </Button>
-    <br>
+    <div class="flex flex-row space-x-4">
+      <div>
+        <h3>Contained</h3>
+        <Button v-bind="args.primary.contained.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.contained.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.contained.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.primary.contained.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.contained.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.contained.disable.small">
-      Button
-    </Button>
-    <br>
+        <Button v-bind="args.primary.contained.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.contained.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.contained.disable.small">
+          Button
+        </Button>
+      </div>
+      <br>
 
-    <h3>Primary Outlined</h3>
-    <Button v-bind="args.primary.outlined.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.outlined.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.outlined.enable.small">
-      Button
-    </Button>
-    <br>
+      <div>
+        <h3>Outlined</h3>
+        <Button v-bind="args.primary.outlined.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.outlined.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.outlined.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.primary.outlined.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.outlined.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.outlined.disable.small">
-      Button
-    </Button>
-    <br>
+        <Button v-bind="args.primary.outlined.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.outlined.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.outlined.disable.small">
+          Button
+        </Button>
+      </div>
+      <br>
 
-    <h3>Primary Text</h3>
-    <Button v-bind="args.primary.text.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.text.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.text.enable.small">
-      Button
-    </Button>
-    <br>
+      <div>
+        <h3>Text</h3>
+        <Button v-bind="args.primary.text.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.text.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.text.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.primary.text.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.primary.text.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.primary.text.disable.small">
-      Button
-    </Button>
+        <Button v-bind="args.primary.text.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.primary.text.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.primary.text.disable.small">
+          Button
+        </Button>
+      </div>
+    </div>
     <br>
 
     <h2>Attention</h2>
-    <h3>Attention Text</h3>
-    <Button v-bind="args.attention.contained.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.contained.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.contained.enable.small">
-      Button
-    </Button>
-    <br>
+    <div class="flex flex-row space-x-4">
+      <div>
+        <h3>Text</h3>
+        <Button v-bind="args.attention.contained.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.contained.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.contained.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.attention.contained.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.contained.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.contained.disable.small">
-      Button
-    </Button>
-    <br>
+        <Button v-bind="args.attention.contained.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.contained.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.contained.disable.small">
+          Button
+        </Button>
+      </div>
+      <br>
 
-    <h3>Attention Outlined</h3>
-    <Button v-bind="args.attention.outlined.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.outlined.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.outlined.enable.small">
-      Button
-    </Button>
-    <br>
+      <div>
+        <h3>Outlined</h3>
+        <Button v-bind="args.attention.outlined.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.outlined.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.outlined.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.attention.outlined.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.outlined.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.outlined.disable.small">
-      Button
-    </Button>
-    <br>
+        <Button v-bind="args.attention.outlined.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.outlined.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.outlined.disable.small">
+          Button
+        </Button>
+      </div>
+      <br>
 
-    <h3>Attention Text</h3>
-    <Button v-bind="args.attention.text.enable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.text.enable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.text.enable.small">
-      Button
-    </Button>
-    <br>
+      <div>
+        <h3>Text</h3>
+        <Button v-bind="args.attention.text.enable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.text.enable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.text.enable.small">
+          Button
+        </Button>
+        <br>
 
-    <Button v-bind="args.attention.text.disable.large">
-      Button
-    </Button>    
-    <br>
-    <Button v-bind="args.attention.text.disable.default">
-      Button
-    </Button>
-    <br>
-    <Button v-bind="args.attention.text.disable.small">
-      Button
-    </Button>
-    <br>
+        <Button v-bind="args.attention.text.disable.large">
+          Button
+        </Button>    
+        <br>
+        <Button v-bind="args.attention.text.disable.default">
+          Button
+        </Button>
+        <br>
+        <Button v-bind="args.attention.text.disable.small">
+          Button
+        </Button>
+      </div>
+    </div>
   `,
 });
 export const All = AllTemplate.bind({});
