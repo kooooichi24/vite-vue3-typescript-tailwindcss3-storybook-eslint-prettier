@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-$ git clone https://github.com/kooooichi24/vite-vue3-typescript-storybook.git
+$ git clone https://github.com/kooooichi24/vite-vue3-typescript-tailwindcss3-storybook-eslint-prettier.git
 ```
 
 ## Usage
