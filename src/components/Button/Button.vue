@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { twMerge } from "tailwind-merge";
 import { computed, useSlots } from "vue";
 import buttonConfig from "./classConfig";
 
@@ -39,17 +40,22 @@ const buttonSizeClass = computed(() => {
   return buttonConfig.size[props.size].base;
 });
 const buttonClass = computed(() => [
-  buttonSizeClass.value,
-  buttonConfig[props.color][props.variant].base,
-  buttonConfig[props.color][props.variant].border,
-  buttonConfig[props.color][props.variant].hover,
-  props.disabled ? buttonConfig.disabled[props.variant] : "",
-  props.shape !== "default" ? buttonConfig.shape[props.shape] : "",
-  buttonConfig.font,
+  twMerge(
+    buttonSizeClass.value,
+    buttonConfig[props.color][props.variant].base,
+    buttonConfig[props.color][props.variant].border,
+    buttonConfig[props.color][props.variant].hover,
+    props.disabled ? buttonConfig.disabled[props.variant] : "",
+    props.shape !== "default"
+      ? buttonConfig.shape[props.shape][props.size]
+      : "",
+    buttonConfig.font
+  ),
 ]);
 
 // Methods
 const onClick = () => {
+  console.log(buttonClass.value);
   emits("click");
 };
 </script>

@@ -52,8 +52,6 @@ const buttonConfig = {
       hover: "enabled:hover:bg-attention-thin enabled:focus:bg-attention-pale",
     },
   },
-  // disabled:
-  //   "cursor-not-allowed bg-secondary-pale disabled:text-textColor-disabled",
   disabled: {
     contained:
       "cursor-not-allowed bg-secondary-pale disabled:text-textColor-disabled",
@@ -62,8 +60,16 @@ const buttonConfig = {
     text: "cursor-not-allowed bg-transparent disabled:text-textColor-disabled",
   },
   shape: {
-    circle: "",
-    round: "rounded-full",
+    circle: {
+      small: "rounded-full px-1 py-1",
+      medium: "rounded-full px-2 py-2",
+      large: "rounded-full px-4 py-4",
+    },
+    round: {
+      small: "rounded-full",
+      medium: "rounded-full",
+      large: "rounded-full",
+    },
   },
   font: "font-semibold",
 };
