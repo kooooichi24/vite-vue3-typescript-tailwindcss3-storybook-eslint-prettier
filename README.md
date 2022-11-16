@@ -1,4 +1,4 @@
-# Vue 3 + TypeScript + Vite
+# Vite + Vue 3 + TypeScript + TailwindCSS 3 + StoryBook + ESLint + Prettier
 
 ## Install
 
