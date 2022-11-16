@@ -61,6 +61,10 @@ const buttonConfig = {
       "cursor-not-allowed bg-transparent disabled:text-textColor-disabled",
     text: "cursor-not-allowed bg-transparent disabled:text-textColor-disabled",
   },
+  shape: {
+    circle: "",
+    round: "rounded-full",
+  },
   font: "font-semibold",
 };
 

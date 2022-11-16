@@ -8,12 +8,14 @@ const props = withDefaults(
     color?: "primary" | "attention";
     variant?: "contained" | "outlined" | "text";
     size?: "small" | "medium" | "large";
+    shape?: "default" | "circle" | "round";
     disabled?: boolean;
   }>(),
   {
     color: "primary",
     variant: "contained",
     size: "medium",
+    shape: "default",
     disabled: false,
   }
 );
@@ -42,13 +44,8 @@ const buttonClass = computed(() => [
   buttonConfig[props.color][props.variant].border,
   buttonConfig[props.color][props.variant].hover,
   props.disabled ? buttonConfig.disabled[props.variant] : "",
+  props.shape !== "default" ? buttonConfig.shape[props.shape] : "",
   buttonConfig.font,
-]);
-const iconLeftClass = computed(() => [
-  props.size === "small" ? "mr-1" : "mr-2",
-]);
-const iconRightClass = computed(() => [
-  props.size === "small" ? "ml-1" : "ml-2",
 ]);
 
 // Methods
@@ -66,7 +63,7 @@ const onClick = () => {
     @click="onClick"
   >
     <!-- icon left -->
-    <span v-if="$slots.left" :class="iconLeftClass">
+    <span v-if="$slots.left">
       <slot name="left" />
     </span>
 
@@ -76,7 +73,7 @@ const onClick = () => {
     </span>
 
     <!-- icon right -->
-    <span v-if="$slots.right" :class="iconRightClass">
+    <span v-if="$slots.right">
       <slot name="right"></slot>
     </span>
   </button>

@@ -6,6 +6,10 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
     onClick: {},
+    shape: {
+      control: { type: "select" },
+      options: ["default", "circle", "round"],
+    },
     color: {
       control: { type: "select" },
       options: ["primary", "attention"],
@@ -457,7 +461,7 @@ const TemplateWithIconLeft = (args) => ({
           d="M12 6v6m0 0v6m0-6h6m-6 0H6"
         />
       </template>
-      Button
+      コールを作成
     </Button>
   `,
 });
@@ -497,4 +501,9 @@ const TemplateWithIconRight = (args) => ({
 export const IconRight = TemplateWithIconRight.bind({});
 IconRight.args = {
   color: "attention",
+};
+
+export const Round = TemplateWithIconLeft.bind({});
+Round.args = {
+  shape: "round",
 };
