@@ -41,7 +41,7 @@ const buttonClass = computed(() => [
   buttonConfig[props.color][props.variant].base,
   buttonConfig[props.color][props.variant].border,
   buttonConfig[props.color][props.variant].hover,
-  props.disabled ? buttonConfig.disabled : "",
+  props.disabled ? buttonConfig.disabled[props.variant] : "",
   buttonConfig.font,
 ]);
 const iconLeftClass = computed(() => [

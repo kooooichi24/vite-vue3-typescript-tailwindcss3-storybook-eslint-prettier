@@ -52,8 +52,15 @@ const buttonConfig = {
       hover: "enabled:hover:bg-attention-thin enabled:focus:bg-attention-pale",
     },
   },
-  disabled:
-    "cursor-not-allowed bg-secondary-pale disabled:text-textColor-disabled",
+  // disabled:
+  //   "cursor-not-allowed bg-secondary-pale disabled:text-textColor-disabled",
+  disabled: {
+    contained:
+      "cursor-not-allowed bg-secondary-pale disabled:text-textColor-disabled",
+    outlined:
+      "cursor-not-allowed bg-transparent disabled:text-textColor-disabled",
+    text: "cursor-not-allowed bg-transparent disabled:text-textColor-disabled",
+  },
   font: "font-semibold",
 };
 
